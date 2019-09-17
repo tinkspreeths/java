@@ -1,0 +1,134 @@
+/*package whatever //do not write package name here */
+
+
+import java.io.*;
+
+import java.util.*;
+
+class Owner{
+
+public static void main(String []args)
+{
+
+Owner obj=new Owner();
+
+obj.property();
+
+}
+
+
+int doors[]=new int[20];
+
+int floors[]=new int[5];
+
+double amount;
+
+String [] bhk=new String[3];
+ 
+ 
+boolean damaged=false;
+
+
+public void  property()
+{
+
+Scanner sc=new Scanner(System.in);
+ 
+  
+
+for(int i=0;i<bhk.length;i++)
+
+{
+
+bhk[i]=sc.nextLine();
+
+}
+
+
+for(int j=0;j<doors.length;j++)
+
+{
+
+doors[j]=sc.nextInt();
+
+}
+
+
+for(int k=0;k<floors.length;k++)
+
+{
+
+floors[k]=sc.nextInt();
+
+}
+
+amount=sc.nextDouble();
+
+System.out.println(doors);
+
+System.out.println(bhk);
+
+
+System.out.println(floors);
+
+System.out.println(amount);
+}
+
+
+}
+
+
+class User extends Owner
+{
+
+public void book()
+
+{
+Scanner sc=new Scanner(System.in);
+
+for(int count=0;count<bhk.length;count++)
+
+{
+bhk[count]=sc.nextLine();
+
+/*
+else */
+
+
+System.out.println("type of room u have booked:"+bhk[count]);
+
+
+if(damaged==true)
+{
+
+super.property();
+System.out.println("calling owner to claim service request:");
+
+
+}
+
+}
+
+}
+public static void main(String []args)
+
+{
+
+User ob=new User ();
+
+ob.book();
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
