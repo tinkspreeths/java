@@ -1,0 +1,41 @@
+/*lets say sorting there are many sorting bubble,insertion ....as a user you shld nt worry abt 
+those sorting implementations ,is called as abstraction.class name def shld be abstract but
+not in methods "there shld be def an abstract named methd"like that.
+there cannot be creation of obj for a abs class and a method only concrete class and methd can 
+create obj
+abs opposite is concrete evrythg is present here.
+abs need not to be 100% abs if we do not want that class "object creation*,directly,thn we can use this abs/
+
+import java.io.*;
+
+abstract  class Shape {
+abstract void draw();
+	}
+
+class rect extends Shape
+{
+    void draw()
+    {
+        System.out.println("drawing ,,,what a rectangle");
+    }
+}
+class circle extends Shape
+{
+    void draw()
+    {
+        System.out.println("drawing a circle");
+        }
+public static void main(String args[])
+{
+    Shape s=new rect();
+    s.draw();
+    Shape h=new circle();
+    h.draw();
+}
+        
+        
+}    
+        
+        
+        
+        
