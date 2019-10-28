@@ -1,0 +1,42 @@
+/* every cons is to ini var and having super as frst line, super to call parent ,
+this () is ano cons to call the cons of the same class if this and super is in same func 
+then,this ref to ano cons whch hvg super in it if thre also hvg this mean that is calling ano
+cons in which there ll be hvg super ;if this()and super in same fn means ini same 
+var 2 times 
+which is  not allowed*/
+
+import java.io.*;
+
+class GFG {
+	boolean flag;
+	public GFG()
+	{
+	    this(false);
+	}
+	public GFG(boolean flag)
+	{
+	    this.flag=flag;
+	}
+}
+class B extends GFG
+{
+    public B()
+    {
+    super();
+    }
+    public B(boolean flag)
+    {
+        super (flag);
+    }
+    public B(int num)
+    {
+        this(true);
+    }
+    }
+class C extends GFG
+{
+    public static void main(String args[])
+    {
+        B b=new B(5);
+    }
+}
