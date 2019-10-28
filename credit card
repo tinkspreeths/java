@@ -1,0 +1,69 @@
+/*by making instance var or data mem as private and local var as in function as  public 
+the code will be redirected to check point it has to meet it mandatorly ,by this we can 
+achieve encapsulation*/
+
+import java.io.*;
+
+class GFG {
+    private int number;
+    private double limit;
+    private double balance=19999;
+ static final int MAX_LIMIT=20000;
+public void setnum(int number)
+{
+    this.number=number;
+}
+public void getnum()
+{
+    System.out.println(number);
+}
+public void setlimit(double limit)
+{
+    this.limit=limit;
+    if(limit>MAX_LIMIT)
+    {
+        System.out.println("its ivvalid limit");
+    }
+    
+    }
+    
+    public void getlimit()
+    {
+        System.out.println(limit);
+    }
+    public void setbalance(double amount)
+    {
+       // this.balance=balance;
+        if(balance -amount>0)
+        {
+            balance=balance-amount;
+            System.out.println("debited"+balance);
+        }
+        else
+        {
+            System.out.println("balance is too low to purchase");
+        }     }
+        public void setcredit(double amount)
+        {
+            if(balance>0)
+            {
+                balance =balance+amount;
+                System.out.println("credited balance is"+balance);
+            }
+            else
+            {
+                System.out.println("no money has been credited into your account");
+            }
+        }
+    
+
+	public static void main (String[] args) {
+	    GFG h=new GFG();
+	    h.setnum(890765);
+	    h.getnum();
+	    h.setlimit(19999);
+	    h.getlimit();
+	    h.setbalance(10000);
+	    h.setcredit(5000);
+	}
+}
