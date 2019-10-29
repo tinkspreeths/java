@@ -1,0 +1,49 @@
+/*package whatever //do not write package name here */
+
+import java.io.*;
+abstract class Abstract1
+{
+    Abstract1()
+    {
+        System.out.println("abstract 1 constructor");
+    }
+    abstract void model();
+    public void gearchange()
+    {
+       System.out.println("gear changed");
+    }
+}
+
+class Abstract2 extends Abstract1
+{
+    public void model()
+    {
+        System.out.println("model is yamaha");
+    }
+}
+class GFG {
+	public static void main (String[] args) {
+Abstract1 u=new Abstract2();//Abstract2 constructor will be created in there 1st line will
+//be super which will call the cons of the super class and so 1st line will be printed 
+u.model();//method overridding
+u.gearchange();//see,here mthd overload or override is not possible but ref var refers to 
+//super class there the mentioned method is present and so compiler will finish its task 
+//it will not hand over to the runtime so,method of super class will be displayed .
+//its better to have a abs and concrete mthd ok,in super class con mthd is common for all sub class which will goes to the all the subclasses.thats why!!!
+
+
+
+	}
+}
+
+
+
+
+
+
+
+
+output:
+abstract 1 constructor
+model is yamaha
+gear changed
