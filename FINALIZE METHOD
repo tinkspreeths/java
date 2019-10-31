@@ -1,0 +1,24 @@
+/*package whatever //do not write package name here */
+
+import java.io.*;
+
+class GFG {
+    
+    
+     j;
+	public static void main (String[] args) {
+		System.out.println("GfG!");
+		GFG k=new GFG();
+		GFG i=new GFG();
+		k.j=i;//1st obj referring to 2nd obj thro ref var
+		i.j=k;//||rly 2nd object through reference variable referring to 1st obj thro 1st 
+		//reference variable.//island of object.//garbage collector will free up this either 
+	//	we can state it explicitely or compiler will do it for you.
+	}
+	
+	public void finalize()
+	{
+	    System.out.println("finalize method called");//before deleting this atleast run one 
+	    //last time and execute it.
+	}
+}
