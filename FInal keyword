@@ -1,0 +1,78 @@
+/*FINAL*/
+
+
+import java.io.*;
+
+ class GFG {
+     static final int j=100;//once bank account number is alloted it should not be changed like same way once roll number of a student
+     is alloted to him/her it should not be chnged ,vehichle number also,cannot leave as blank either 
+     u have to assign it here or in the constructor when u declare final .as well as u shld not change it.
+
+public void change()
+{
+    
+j=200;//error will come here as if we initialize final for a variable we can't change.
+
+public static void main(String args[])
+{
+   GFG h=new GFG();
+   h.change();
+}
+	
+}
+output:
+prog.java:7: error: <identifier> expected
+     static final j=100;
+
+
+import java.io.*;
+
+ class GFG {
+     static final int j;//if it is not initialized here i mean the static var ,then the only
+     //way of initializing is through the static block
+static{
+    j=100;
+}
+
+public static void main(String args[])
+{
+   GFG h=new GFG();
+   //h.change();
+}
+	
+}
+
+
+
+FINAL METHOD:
+//it cannot be overloaded or overridded .
+FINAL CLASS:
+//can never be a super class to any sub class ,it is not inherited.eg.String class is a final class.u should not inherit string .
+
+LOCAL VARIABLE:
+in the same line itself we should declare and initialize .//compulsary.
+
+CONSTRUCTORS:
+constructor overridding is a invalid concept we cannot put the con s name in subclass we shld not override it .so,there is no need to declaring final keyword
+in  a constructor  .
+
+
+class GFG{
+final int i;//for instance variable atleast it shld be ini here or inside a constructor .#final
+ GFG(int i)
+{
+   this.i=i; 
+   System.out.println(i);
+}
+public static void main(String args[])
+{
+   GFG h=new GFG(500);
+   //h.change();
+   //h.method(456);
+   
+}
+	
+}
+
+output:
+500
