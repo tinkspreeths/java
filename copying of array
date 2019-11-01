@@ -1,0 +1,19 @@
+import java.io.*;
+//int []b=a;by doing it so that the b ref is ref to the same object of ref a;
+class GFG {
+	public static void main (String[] args) {
+		int []a={34,78,90};//a ref var ref to arr of int object .
+		int []b=new  int [a.length];
+		for(int i=0;i<a.length;i++)
+		{
+		    b[i]=a[i];
+		    System.out.println(b[i]);
+		}
+}
+}
+
+
+Output: 
+34
+78
+90
