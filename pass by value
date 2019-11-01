@@ -1,0 +1,26 @@
+/*
+
+String []a.class file in jvm is going to be created implicitly .
+*/
+
+import java.io.*;
+
+class GFG {
+	public static void main (String[] args) {
+		int []a=new int[7];//a ref var ref to arr of int object .
+		a[2]=9;
+		changea(a);//actual parameter 
+		//we have two different copies of a
+		
+		
+		System.out.println(a[2]);
+	}
+	private static void changea(int [] a)
+	{//formal parameter
+     a[2]=10;
+	}
+}
+
+
+output:
+10
