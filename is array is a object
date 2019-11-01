@@ -1,0 +1,21 @@
+/*
+
+String []a.class file in jvm is going to be created implicitly .
+*/
+
+import java.io.*;
+
+class GFG {
+	public static void main (String[] args) {
+		String []a=new String[5];
+	    if(a instanceof Object)
+	    {
+	        System.out.println("yes,array is an object.");
+	    }
+	}
+	
+
+}
+
+Output: 
+yes,array is an object.
