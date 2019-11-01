@@ -1,0 +1,19 @@
+import java.io.*;
+//in constructor we are initializing.
+class GFG {
+	public static void main (String[] args) {
+		String []a=new String[5];
+	    String hi=new String("frodo");
+	    a[0]="hi";
+	     a[1]=new String("clover");
+	     a[2]=new String("vimo");
+	    System.out.println(hi+a[1]+a[2]);
+	}
+	
+
+}
+
+
+
+Output: 
+frodoclovervimo
