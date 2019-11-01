@@ -1,0 +1,29 @@
+/*in arrays,we can have reference variable of the objects also referring to some other objects
+ but all should be in same class infact 
+array is an object so int[] j;means ref j created till now not pointing to any object.:) 
+to point to an object we need to create it know like int []i=new int[5];now obj of 5 elements
+are created i is referring to those objects.object array having one predefined variable called
+length which will return its size.//the objects values will be 0 by default.an array of 
+references to objects of type String is a class 
+
+
+*/
+
+import java.io.*;
+
+class GFG {
+    
+    
+    
+	public static void main (String[] args) {
+		int []a=new int[5];
+		int x=a[0];
+		int y=a[1];
+		System.out.println(a.length);
+	}
+	
+
+}
+
+Output: 
+5
