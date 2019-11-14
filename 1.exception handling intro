@@ -1,0 +1,13 @@
+basically,u will get error if u done any mistake while typing program either it may be syntatical error or some compile time error which is
+directedly reported by the compiler to you,if any run time error then,it will stop i java,for handling those errors we use concept exception
+handling.for each and every error jvm will try to create an object for it and we have to write the code for it using that object.it will not
+stop executing the flow of program if you handle it properly.
+
+
+types of exceptions
+checked-if we can itself able to judge that this particular line of code going to give us an error,then compiler will force us to handle
+it .either using try catch block or using throws.which compiler will force us.
+unchecked-here compiler will not force us to handle ,eg:-arrayindexoutofbounds exception ,arithmatic exception
+
+
+
