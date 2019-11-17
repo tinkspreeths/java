@@ -1,0 +1,26 @@
+import java.io.*;
+import java.util.*;
+
+class Main {
+	public static void main (String[] args) {
+	int [] age = new int[5];
+	Scanner sc=new Scanner(System.in);
+	while(sc.hasNextInt())
+	{
+	    for(int i:age)
+	    {
+	  age[i]=sc.nextInt();
+System.out.println(age[i]);
+		
+	}
+	}
+	sc.close();
+	}
+}
+
+1 2 3 4 5                                                                                                                     
+1                                                                                                                             
+2                                                                                                                             
+3                                                                                                                             
+4                                                                                                                             
+5
