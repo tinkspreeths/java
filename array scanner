@@ -24,3 +24,21 @@ System.out.println(age[i]);
 3                                                                                                                             
 4                                                                                                                             
 5
+
+
+import java.io.*;
+import java.util.*;
+
+class Main {
+	public static void main (String[] args) {
+	int [] age;
+	age=new int[5];
+	Scanner sc=new Scanner(System.in);
+	for(int i:age)
+	{
+System.out.println(age[i]=sc.nextInt());
+		
+	}
+	sc.close();
+	}
+}
