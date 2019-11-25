@@ -1,0 +1,25 @@
+/*package whatever //do not write package name here */
+
+import java.io.*;
+
+class GFG {
+    String name;
+    int id;
+    GFG(String name,int id)
+    {
+       this.name=name;
+       this.id=id;
+    }
+    public String toString()
+    {
+        return("name:"+name+"   id :"+id);
+    }
+	public static void main (String[] args) {
+	    GFG h=new GFG("preethi",47);
+	   
+		System.out.println( h.toString());
+	}
+}
+
+output:
+name:preethi   id :47
