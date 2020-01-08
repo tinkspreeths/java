@@ -1,0 +1,42 @@
+import java.io.*;
+import java.util.*;
+public class Main
+{
+    	    long a;
+
+    public void jio(){
+    
+	    if(a%2==0)
+	        {
+	            System.out.println("actually it's an even number so,div by half:"+" "+a/2);
+	        }
+	        else{
+	            System.out.println("its an odd num so we r using 3n+1: "+"  "+((3*a)+1));
+	        }
+    }
+	public static void main(String[] args) {
+	    for (int i=0;i<4;i++ ) {
+	    Scanner sc=new Scanner(System.in);
+	    	    Main m=new Main();
+
+	   m. a=sc.nextLong();
+	    System.out.println("entered num is :"+m.a);
+	    m.jio();
+	    }
+	}
+}
+
+
+
+34567                                                                                                                         
+entered num is :34567                                                                                                         
+its an odd num so we r using 3n+1:   103702                                                                                   
+76894                                                                                                                         
+entered num is :76894                                                                                                         
+actually it's an even number so,div by half: 38447     
+entered num is :234561                                                                                                        
+its an odd num so we r using 3n+1:   703684                                                                                   
+877                                                                                                                           
+entered num is :877                                                                                                           
+its an odd num so we r using 3n+1:   2632  
+
