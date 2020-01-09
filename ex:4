@@ -1,0 +1,80 @@
+import java.io.*;
+import java.util.*;
+class Main{
+    int employee_id,departmentCode;
+    String jobBand;
+    protected int emp(int employee_id)
+    {
+        this.employee_id=employee_id;
+        System.out.println("the employee id is :"+employee_id);
+        return employee_id;
+    }
+    protected int departmentcode(int departmentCode)
+    {
+        this.departmentCode=departmentCode;
+        if(departmentCode<=110  ){
+            System.out.println("invalid departmentCode");
+        }
+        else if(departmentCode>=125)
+        {
+            System.out.println("invalid departmentCode");
+        }
+        else{
+                System.out.println("the departmentCode is :"+departmentCode);
+}
+        return departmentCode;
+    }
+    protected String jobband(String jobBand)
+    {
+        this.jobBand=jobBand;
+        switch(jobBand)
+        {
+            case"c1":
+          System.out.println("the jobband is :"+jobBand);
+break;
+                            case"c2":
+                          System.out.println("the jobband is :"+jobBand);
+
+break;
+
+            case"c3":
+     System.out.println("the jobband is :"+jobBand);
+
+break;
+
+            case"c4":
+          System.out.println("the jobband is :"+jobBand);
+
+break;
+default:
+System.out.println("invalid jobband");
+        }
+        
+
+        return jobBand;
+    }
+    
+    
+    
+    
+    public static void main(String [] args)
+    {
+        Main m=new Main();
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter employee_id please ?");
+       m.employee_id= sc.nextInt();
+               System.out.println("enter departmentCode please ?");
+
+        m.departmentCode=sc.nextInt();
+                System.out.println("enter jobBand please ?");
+
+        m.jobBand=sc.next();
+        m.emp(m.employee_id);
+        m.departmentcode(m.departmentCode);
+        m.jobband(m.jobBand);
+    }
+}
+
+
+
+
